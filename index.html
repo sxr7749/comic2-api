@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画 API</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 12px 0;
+            font-family: monospace;
+            color: #007bff;
+        }
+        .badge {
+            background: #28a745;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 漫画 API</h1>
+        <p>这是一个静态漫画数据 API，用于为漫画 APP 提供数据支持。</p>
+        
+        <h2>接口列表</h2>
+        
+        <div class="endpoint">
+            <span class="badge">GET</span> /api/comics.json
+        </div>
+        <p>获取漫画列表，包含热门漫画信息</p>
+        
+        <div class="endpoint">
+            <span class="badge">GET</span> /api/categories.json
+        </div>
+        <p>获取漫画分类列表</p>
+        
+        <div class="endpoint">
+            <span class="badge">GET</span> /api/chapters/{comicId}.json
+        </div>
+        <p>获取指定漫画的章节列表</p>
+        
+        <h2>数据来源</h2>
+        <p>数据来自 MangaDex 公开 API，仅供学习和测试使用。</p>
+        
+        <h2>更新频率</h2>
+        <p>每天凌晨自动更新数据。</p>
+    </div>
+</body>
+</html>
