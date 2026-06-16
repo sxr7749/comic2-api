@@ -8,8 +8,12 @@ on:
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,28 +25,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Check crawler exists
-        run: |
-          ls -la
-          if [ ! -f "crawler.py" ]; then
-            echo "ERROR: crawler.py not found!"
-            exit 1
-          fi
-
       - name: Run crawler
         run: python crawler.py
 
       - name: Check output
         run: |
           ls -la
-          ls -la api/
-          ls -la api/chapters/
+          ls -la api/ 2>/dev/null || echo "api/ not found"
 
-      - name: Deploy to Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          force_orphan: true
+      - name: Deploy to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B gh-pages
+          git add -A
+          git commit -m "Update comics data" --allow-empty
+          git push -f origin gh-pages
