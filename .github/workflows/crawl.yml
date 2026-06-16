@@ -21,8 +21,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
+      - name: Check crawler exists
+        run: |
+          ls -la
+          if [ ! -f "crawler.py" ]; then
+            echo "ERROR: crawler.py not found!"
+            exit 1
+          fi
+
       - name: Run crawler
         run: python crawler.py
+
+      - name: Check output
+        run: |
+          ls -la
+          ls -la api/
+          ls -la api/chapters/
 
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -31,3 +45,4 @@ jobs:
           publish_dir: ./
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+          force_orphan: true
