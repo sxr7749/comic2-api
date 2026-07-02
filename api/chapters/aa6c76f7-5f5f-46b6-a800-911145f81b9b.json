@@ -1,0 +1,65 @@
+[
+  {
+    "id": "0604440a-014b-4cd9-9d67-ffda9e8783f8",
+    "comic_id": "aa6c76f7-5f5f-46b6-a800-911145f81b9b",
+    "title": "Эпилог",
+    "chapter_number": "115.5",
+    "page_count": 0,
+    "update_time": "2025-09-05T15:34:57+00:00",
+    "images": []
+  },
+  {
+    "id": "c4be5362-5391-4419-9639-aeb676739a64",
+    "comic_id": "aa6c76f7-5f5f-46b6-a800-911145f81b9b",
+    "title": "Epílogo",
+    "chapter_number": "115.5",
+    "page_count": 0,
+    "update_time": "2025-07-11T20:45:07+00:00",
+    "images": []
+  },
+  {
+    "id": "ce4a2eb8-e17e-4be5-91b4-85a75f8fa12f",
+    "comic_id": "aa6c76f7-5f5f-46b6-a800-911145f81b9b",
+    "title": "Epílogo",
+    "chapter_number": "115.5",
+    "page_count": 0,
+    "update_time": "2025-07-11T01:09:57+00:00",
+    "images": []
+  },
+  {
+    "id": "fd342f18-e37d-44e7-bb01-13652b276b4c",
+    "comic_id": "aa6c76f7-5f5f-46b6-a800-911145f81b9b",
+    "title": "Epílogo",
+    "chapter_number": "115.5",
+    "page_count": 0,
+    "update_time": "2025-11-18T17:19:27+00:00",
+    "images": []
+  },
+  {
+    "id": "2940541d-ae1d-4a70-a737-b0dbc7ea0b8e",
+    "comic_id": "aa6c76f7-5f5f-46b6-a800-911145f81b9b",
+    "title": "Конец.",
+    "chapter_number": "115",
+    "page_count": 0,
+    "update_time": "2025-07-11T00:48:16+00:00",
+    "images": []
+  },
+  {
+    "id": "0e92d7bc-2bbe-4d4e-b4ff-71dbd02b6514",
+    "comic_id": "aa6c76f7-5f5f-46b6-a800-911145f81b9b",
+    "title": "Chapter 115",
+    "chapter_number": "115",
+    "page_count": 0,
+    "update_time": "2025-07-11T00:48:18+00:00",
+    "images": []
+  },
+  {
+    "id": "6f57614b-6f26-4498-b1bc-8c93b1d9daba",
+    "comic_id": "aa6c76f7-5f5f-46b6-a800-911145f81b9b",
+    "title": "Chapter 114",
+    "chapter_number": "114",
+    "page_count": 0,
+    "update_time": "2025-07-11T00:48:17+00:00",
+    "images": []
+  }
+]
